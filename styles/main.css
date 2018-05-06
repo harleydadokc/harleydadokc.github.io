@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     font-size: /* x.xrem */;
-    text-align: center;
+       text-align: center;
     border-bottom: 1px solid #6f07bb;
 }
 
@@ -36,8 +36,8 @@ header, footer, footer a {
 }
 
 header img {
-    width: /*  */;
-    height: auto;
+   /* width: auto;
+    height: auto; */
     float: right;
 }
 
