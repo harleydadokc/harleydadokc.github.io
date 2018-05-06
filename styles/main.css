@@ -12,14 +12,15 @@ body {
 }
 
 h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #red */;
+    font-size: 2rem /;
+    color:  gold;
+    background-color: darkorchid;
 }
 
 h2 {
     font-size: /* x.xrem */;
     text-align: center;
-    border-bottom: 50px solid #6f07bb;
+    border-bottom: 1px solid #6f07bb;
 }
 
 header, main, footer {
@@ -30,13 +31,17 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: /* #ca94f2 */;
-    color: black;
+    background-color: darkorchid;
+    color: gold;
 }
 
 header img {
     width: /*  */;
     height: auto;
+    float: right;
+}
+
+main img{
     float: right;
 }
 
