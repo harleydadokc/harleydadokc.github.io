@@ -37,12 +37,13 @@ header, footer, footer a {
 }
 
 header img {
-   /* width: auto;
-    height: auto; */
+   
     float: right;
 }
 
 main img{
+    /* width: auto;
+    height: auto; */
     float: right;
 }
 
