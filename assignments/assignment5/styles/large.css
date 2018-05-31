@@ -27,4 +27,8 @@ li a:hover {
 .forecast{
     display: inline;
 }
+  .hero-text{ color: whitesmoke;
+top:125%;
+  position: absolute;
+left:12%;}  
 }

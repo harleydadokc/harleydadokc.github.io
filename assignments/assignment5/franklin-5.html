@@ -3,23 +3,17 @@
 <head> 
   <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    .responsive{
-        width: 100%;
-        height: auto
-        }
-    </style>
-    <title>Tri-City Weather Spot</title>
+        <title>Tri-City Weather Spot</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css"> 
     <link rel="stylesheet" href="styles/medium.css"> 
     <link rel="stylesheet" href="styles/large.css"> 
 </head>
 <body>
- <img src="images/weatherlogo.jpg"width="150" height="150" alt="tricitywestherlogo">
+   <header>
+       <img src="images/weatherlogo.jpg"alt="tricitywestherlogo" class="logo">
     <h1>Tri-City Weather Spot</h1>
     <h2>Keeping You Informed and Up-to-Date</h2>
-  <header>
   </header>
   <nav>
     <ul>
@@ -29,8 +23,11 @@
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
-                    <img src="images/mainstreetfranklin.jpg" class="responsive" width="100%" max-height="68px" alt="mainstreet">
-    </ul>		
+        <div class="mainstreet">
+            <img src="images/mainstreetfranklin.jpg" class="responsive" alt="mainstreet">
+            <div class="hero-text"><p>Franklin, Main Street</p> </div>
+        </div>
+      </ul>		
   </nav>
       <main>
     <h1>The City of Franklin</h1>
@@ -43,11 +40,10 @@
         <p>Low: 66&deg;</p>  
       </div>
       <div class="current">
-        Sunny
-        <picture>
-            <h2><img src="images/sunny.jpg"  alt="sun icon"></h2>
+           <h2>Sunny</h2>
+            <picture class="sun-icon">           
+            <img src="images/sunny.jpg" alt="sun icon">
           </picture>
-            <img src="images/sunnyday.jpg"  alt="sunny day">
       </div>   
       <div class="conditions">
         <p>Chance of Precipitation: 0&percnt;</p>  
