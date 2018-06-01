@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  ____________  /* Declare the base font-family */
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
@@ -27,7 +27,7 @@ top:95%;
   position: absolute;
 left:12%;}
 header img.logo {float: left; } 
-.logo{width: 07%; height 07%;}
+.logo{width: 9%; height 9%;}
 nav {}
 nav button {}
 nav ul {}
@@ -36,9 +36,16 @@ nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
 
+.highlow{
+    float: left;
+}
 .current{
     float:right;
     text-align: center;
+}
+
+.conditions{
+    clear: left;
 }
 table{
     border: 1px solid purple;
