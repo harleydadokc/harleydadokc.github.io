@@ -6,11 +6,10 @@
 
 body {
   font-size: 16px;
-  ____________  /* Declare the base font-family */
-}
+  }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+ 
 }
 
 header {}
@@ -27,7 +26,7 @@ top:95%;
   position: absolute;
 left:12%;}
 header img.logo {float: left; } 
-.logo{width: 07%; height 07%;}
+.logo{width: 6%; height 6%;}
 nav {}
 nav button {}
 nav ul {}
@@ -48,8 +47,11 @@ td, th{
     text-align: center;
 }
 
-article img{
-    float:right;
+.todayinhistory{
+    overflow: auto;
+}
+.tornadopic{
+      float: right;
 }
 main {}
 main h2 {}
@@ -58,6 +60,9 @@ main figure img { }
     .forecast{
         display: none;
     }
-footer {background-color: #92a8d1;
-        
-}
+footer { 
+    background-color: #92a8d1;
+ text-align: center;
+    margin-top: 20%;
+}       
+

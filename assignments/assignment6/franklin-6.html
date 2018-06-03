@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/small.css"> 
     <link rel="stylesheet" href="styles/medium.css"> 
     <link rel="stylesheet" href="styles/large.css"> 
+    <script src="currentdate.js"></script>
+
 </head>
 <body>
    <header>
@@ -16,7 +18,8 @@
     <h1>Tri-City Weather Spot</h1>
     <h2>Keeping You Informed and Up-to-Date</h2>
   </header>
-  <nav>
+  <nav class="clearfix">
+      <button>&#9776;</button>
     <ul>
     	<li><a href="#">Home</a></li>
     	<li><a href="#">Franklin</a></li>
@@ -25,13 +28,13 @@
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
         <div class="mainstreet">
-            <img src="images/mainstreetfranklin.jpg" class="responsive" alt="mainstreet">
+          <img src="images/franklinoriginal.jpg" class="responsive" alt="franklin sunny">
             <div class="hero-text"><p></p> </div>
         </div>
       </ul>		
   </nav>
       <main>
-     <img src="images/franklinoriginal.jpeg" class="responsive" alt="mainstreet">
+     
     <figure>
     </figure>
     <section class="weather-summary">
@@ -87,9 +90,9 @@
       </table>
     </section>
       
-    <article>
+    <article> 
+        <div class="todayinhistory"><img class="tornadopic" src="images/tornado.jpg"alt= tornado></div>
       <h2>This Day in History</h2>	
-      <img src="images/tornado.jpg"alt= tornado>
       <p class="town-article">A severe weather outbreak occurred the Midwest on this day in 2011. Numerous supercell thunderstorms developed and moved north-northeast across Missouri and Illinois during the afternoon and evening hours. Very large hail and damaging winds were reported, along with funnel clouds and a few tornadoes.
       </p>
     </article>		  
@@ -98,7 +101,7 @@
     
   <footer>
     <section class="contact">
-      <h3>Address</h3>
+        <h3>Address</h3>
      Tri-City Weather Spotter 123 Main St. Franklin, US 99999
         <h3>Phone</h3>
         987-987-9876
@@ -107,7 +110,10 @@
         
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 &vert; All Rights Reserved &vert; Site Title &vert; <span id="currentdate">Current Date Placeholder</span>
+    <section class="footer-bar">&copy;2018 &vert; All Rights Reserved &vert; Site Title &vert; <span id="currentdate"><script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script></span>
     </section>
   </footer>
 

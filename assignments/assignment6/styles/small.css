@@ -10,7 +10,7 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: ______; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width:  /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {}
@@ -27,14 +27,38 @@ top:95%;
   position: absolute;
 left:12%;}
 header img.logo {float: left; } 
-.logo{width: 9%; height 9%;}
-nav {}
-nav button {}
-nav ul {}
+.logo{width: 7%; height 7%;}
+nav {
+    background-color: #ccc;
+    font-family:sans-serif
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav ul {
+list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
+    
+}
 nav ul li {}
-nav ul li a {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    
+}
 nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li a:hover {background-color: (0,0,0,0.5);
+    
+}
 
 .highlow{
     float: left;
@@ -65,6 +89,14 @@ main figure img { }
     .forecast{
         display: none;
     }
-footer {background-color: #92a8d1;
+footer { 
+    background-color: #92a8d1;
+ text-align: center;
+    margin-top: 20%;
+}  
+.clearfix:after {
+    content: ""; 
+    display: table;
+    clear: both;
+}     
         
-}
